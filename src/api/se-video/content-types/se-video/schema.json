@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "se_videos",
+  "info": {
+    "singularName": "se-video",
+    "pluralName": "se-videos",
+    "displayName": "SE-Video"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
