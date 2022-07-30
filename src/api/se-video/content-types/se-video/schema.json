@@ -4,10 +4,11 @@
   "info": {
     "singularName": "se-video",
     "pluralName": "se-videos",
-    "displayName": "SE-Video"
+    "displayName": "SE-Video",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
