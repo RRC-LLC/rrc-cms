@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rrc_project_types",
+  "info": {
+    "singularName": "rrc-project-type",
+    "pluralName": "rrc-project-types",
+    "displayName": "RRC-Project-Tag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Type": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

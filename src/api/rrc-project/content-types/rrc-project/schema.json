@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rrc_projects",
+  "info": {
+    "singularName": "rrc-project",
+    "pluralName": "rrc-projects",
+    "displayName": "RRC-Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Thumbnail_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Project_Scope": {
+      "type": "string",
+      "required": true
+    },
+    "External_Link": {
+      "type": "string",
+      "required": false
+    },
+    "Project_Tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rrc-project-type.rrc-project-type"
+    },
+    "Thumbnail_Hover_Video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos",
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ]
+    },
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Internal_Route": {
+      "type": "string"
+    }
+  }
+}
