@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rrc_case_studies",
+  "info": {
+    "singularName": "rrc-case-study",
+    "pluralName": "rrc-case-studies",
+    "displayName": "RRC-Case-Study",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Client": {
+      "type": "string",
+      "required": true
+    },
+    "Project_Details": {
+      "type": "string",
+      "required": true
+    },
+    "Project_Card": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rrc-project.rrc-project",
+      "inversedBy": "Case_Study"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Team": {
+      "type": "richtext",
+      "required": true
+    },
+    "YouTube_ID": {
+      "type": "string"
+    },
+    "Media_Gallery": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

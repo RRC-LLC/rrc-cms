@@ -55,6 +55,12 @@
     },
     "Internal_Route": {
       "type": "string"
+    },
+    "Case_Study": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rrc-case-study.rrc-case-study",
+      "mappedBy": "Project_Card"
     }
   }
 }
