@@ -19,6 +19,12 @@
     "Link": {
       "type": "string",
       "required": true
+    },
+    "Order": {
+      "type": "integer",
+      "min": 0,
+      "unique": true,
+      "required": true
     }
   }
 }
