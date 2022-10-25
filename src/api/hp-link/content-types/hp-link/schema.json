@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hp_links",
+  "info": {
+    "singularName": "hp-link",
+    "pluralName": "hp-links",
+    "displayName": "HP-Link"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    },
+    "Order": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 0
+    }
+  }
+}
